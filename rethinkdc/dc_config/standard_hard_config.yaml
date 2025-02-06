@@ -1,0 +1,24 @@
+batch_size: 128
+gradient_accumulation_steps: 1
+start_epoch: 0
+epochs: 300
+workers: 4
+cos: true
+adamw_lr: 0.001
+adamw_weight_decay: 0.01
+teacher_model: resnet18
+temperature: 20.0
+wandb_project: demo-rethink-dc
+wandb_api_key: null
+mix_type: None
+mixup: 0.8
+cutmix: 1.0
+hard_label: true
+sgd_setting: false
+mode: fkd_save
+hf_cache_dir: ./hf_cache
+
+# model: resnet18
+# train_dir: xiaolingao/2025-rethinkdc-imagenet-random-ipc-10
+# output_dir: ./result/rn18_ipc10_bs128_hard
+# ipc: 10

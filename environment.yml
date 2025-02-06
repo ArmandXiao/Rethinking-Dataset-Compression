@@ -1,0 +1,22 @@
+name: rethinkdc
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - pip:
+    # PyTorch (GPU environment)
+    - torch
+    - torchvision
+    - torchaudio
+    # tools
+    - pandas
+    - numpy
+    # experiment tracking 
+    - wandb
+    # build tools
+    - build
+    # btr visuzaization tools
+    - rich
+    # Hugging Face Related
+    - huggingface-hub
+    - datasets
